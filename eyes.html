@@ -75,25 +75,26 @@
         </div>
         
         <nav class="menu">
-            <ul>
-                <li>
-                    <a href="http://127.0.0.1:5500/eyes.html">MẮT</a>
-                </li>
-                <li>
-                    <a href="http://127.0.0.1:5500/face.html">MẶT</a>                            </li>
-                <li>
-                    <a href="http://127.0.0.1:5500/lips.html">MÔI</a>
-                </li>
-                <li>
-                    <a href="#">HƯỚNG DẪN<BR> TRANG ĐIỂM</a>
-                </li>
-                <li>
-                    <a href="#">FIT FINDER</a>
-                </li>
-                <li>
-                    <a href="#">TRANG ĐIỂM ẢO</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+                <a href="/eyes.html">MẮT</a>
+            </li>
+            <li>
+                <a href="/face.html">MẶT</a>                            
+            </li>
+            <li>
+                <a href="/lips.html">MÔI</a>
+            </li>
+            <li>
+                <a href="/hdtd.html">HƯỚNG DẪN<BR> TRANG ĐIỂM</a>
+            </li>
+            <li>
+                <a href="#">FIT FINDER</a>
+            </li>
+            <li>
+                <a href="#">TRANG ĐIỂM ẢO</a>
+            </li>
+          </ul>
         </nav>
     </div>
 </header>
@@ -103,7 +104,7 @@
 <div class="extra-main">
   <div class="extra-main-inner">
     <ul>
-      <li><a href="#">Trang chủ</a></li>
+      <li><a href="/index.html">Trang chủ</a></li>
       <li><img srcset="/mbl_img/Vector.png 2x" alt="icons"></li>
       <li><a href="#">Mắt</a></li>
     </ul>
@@ -204,7 +205,7 @@
             <a href="" class="rate-star"><img srcset="/mbl_img/Frame33.png 2x" alt=""></a>
             <ul class="buying">
               <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
-              <button class="btn2">MUA NGAY</button> 
+              <a  href="/checkout.html"><button class="btn2">MUA NGAY</button></a>
             </ul>
           </div>
         </div>
@@ -395,30 +396,8 @@
         </div>
     </div>
   </footer>
+  <script>
 
-  <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js"></script>
-
-
-  <script type="module">
-    const firebaseConfig = {
-      apiKey: "AIzaSyA4bW0afXn2KVRcVMdLLm6w1tmckp9Hi0E",
-      authDomain: "maybelline-3b703.firebaseapp.com",
-      databaseURL: "https://maybelline-3b703-default-rtdb.firebaseio.com",
-      projectId: "maybelline-3b703",
-      storageBucket: "maybelline-3b703.appspot.com",
-      messagingSenderId: "1047108009597",
-      appId: "1:1047108009597:web:6cedf8ea9fe588f9597b14",
-      measurementId: "G-PKXGFC06ML"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
   </script>
-  <script src="./prd.js"></script>
-
-
 </body>
 </html>
