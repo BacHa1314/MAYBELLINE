@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="keywords" content="MediaCenter, Template, eCommerce">
+<meta name="robots" content="all">
+<title>maybelline</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/eye.css">
+
+
+<style>
+  .slider-adv{
+    overflow: hidden;
+  }
+  .slider-item{
+    opacity: 0;
+  }
+  .slider-item:first-child {
+    opacity: 1;
+  }
+  .slidebar-left{
+    height: 438.8px;;
+  }
+</style>
+
+</head>
+<body class="cnt-home">
+
+  <header>
+    <div class="wrapper">
+        <div class="front-header">
+            <nav class="main-header">
+                <ul class="follow">
+                    <li>
+                        <p>Theo dõi qua: </p>
+                    </li>
+                    <li>
+                        <a href="#"><img srcset="images/fbreal.png 10x" alt="" > </a>
+                    </li>
+                    <li>
+                        <a href="#"><img srcset="images/instagram.png 2x" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img srcset="images/phone-call.png 2x" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img srcset="images/MAIL.png 2x" alt="" ></a>
+                    </li>
+                    <li>
+                        <a href="#"><img srcset="images/YOUTUBE.png 2x" alt=""></a>
+                    </li>
+                </ul>
+                <div class="logo">
+                    <h1>MAYBELLINE</h1>
+                    <p>NEW YORK</p>
+                </div>
+                <ul class="timkiem">
+                    <li>
+                        <input type="text" placeholder="  Tìm kiếm">
+                    </li>
+                    <li class="giohang">
+                        <a href="#" ><img srcset="/images/giohang.png 2x" alt="" ></a>
+                        <p>Giỏ hàng</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <nav class="menu">
+            <ul>
+              <li>
+                    <a href="http://127.0.0.1:5500/eyes.html">MẮT</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/face.html">MẶT</a>                            </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/lips.html">MÔI</a>
+                </li>
+                <li>
+                    <a href="#">HƯỚNG DẪN<BR> TRANG ĐIỂM</a>
+                </li>
+                <li>
+                    <a href="#">FIT FINDER</a>
+                </li>
+                <li>
+                    <a href="#">TRANG ĐIỂM ẢO</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- End of the header ul -->
+  
+
+<div class="extra-main">
+  <div class="extra-main-inner">
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li><img srcset="/images/Vector.png 2x" alt="icons"></li>
+      <li><a href="#">Môi</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="body-content">
+  <div class="slidebar-left">
+    <div class="danhmuc">
+      <div class="text">DANH MỤC SẢN PHẨM</div>
+      <ul>
+        <li><a href="#">Mặt</a>
+          <ul>
+            <li><a href="#">Alls</a></li>
+            <li><a href="#">Son kem</a></li>
+            <li><a href="#">Son thỏi</a></li> 
+          </ul>
+        </li>
+        <li><a href="#">Giá thành</a>
+          <ul>
+            <li><a href="#">Alls</a></li>
+            <li><a href="#">0đ - 100.000đ</a></li>
+            <li><a href="#">100.000đ - 500.000đ</a></li>
+            <li><a href="#"> 500.000đ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="advertisement">
+    <div class="slider-adv">
+      <img src="./maybelline/slider-3.jpg " class="slider-item">
+      <img src="./maybelline/slider-2.jpg" class="slider-item"> 
+      <img src="./maybelline/slider-4.jpg" class="slider-item"> 
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <style>
+      .slider-adv{
+        overflow: visible;
+        position: relative;
+      }
+      .slider-item{
+        opacity: 0;
+        position: absolute;
+      }
+      .slider-item:first-child {
+        opacity: 1;
+      }
+    </style>
+
+    <script>
+      $(function(){
+        var count = $('.slider-item').length;
+        var ind = 0;
+
+        function setImg(){
+          $('.slider-item').stop().animate({opacity:0});
+          $('.slider-item:eq('+ind +')').stop().animate({opacity:1});
+        }
+        function slideSwap() {
+          if(ind == count -1) {
+            ind = -1;
+          }
+          ind++;
+          setImg();
+        }
+        start_slideSwap();
+        function start_slideSwap() {
+          autoPlay = setInterval(slideSwap, 3500);
+        }
+        $('.slider-adv').hover(function() {
+          clearInterval(autoPlay);
+        }, function(){
+          start_slideSwap();
+        });
+      });
+    </script>
+
+  </div>
+
+  <div class="homebanner-holder">
+    <ul class="product">
+      <!-- startr-->
+      <li class="prd">
+        <div class="product-item">
+          <div class="product-top">
+            <a href="" class="eyeproduct-thumb">
+              <img src="/maybelline/sp-moi-1.png" alt="">
+            </a>
+          </div>
+          <div class="product-inf">
+            <a href="" class="product-name">Son Thỏi Color Sensational Ultimatte</a>
+            <a href="" class="product-price">79.000đ</a>
+            <a href="" class="rate-star"><img srcset="/maybelline/Frame33.png 2x" alt=""></a>
+            <ul class="buying">
+              <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
+              <button class="btn2">MUA NGAY</button> 
+            </ul>
+          </div>
+        </div>
+      </li>
+  <!-- sp 1-->
+    <li class="prd">
+      <div class="product-item">
+        <div class="product-top">
+          <a href="" class="eyeproduct-thumb">
+            <img src="/maybelline/sp-moi-2.png" alt="">
+          </a>
+        </div>
+        <div class="product-inf">
+          <a href="" class="product-name">Son Kem Lì Matte Ink Brooklyn Blush</a>
+          <a href="" class="product-price">149.000đ</a>
+          <a href="" class="rate-star"><img srcset="/maybelline/Frame34.png 2x" alt=""></a>
+          <ul class="sold-out">
+            <button class="bt-sold">HẾT HÀNG</button> 
+          </ul>
+        </div>
+      </div>
+    </li>
+    <!-- sp 2-->
+    <li class="prd">
+      <div class="product-item">
+        <div class="product-top">
+          <a href="" class="eyeproduct-thumb">
+            <img src="/maybelline/sp-moi-3.png" alt="">
+          </a>
+        </div>
+        <div class="product-inf">
+          <a href="#" class="product-name">Son Kem Sensational Liquid Matte</a>
+          <a href="#" class="product-price">199.000đ</a>
+          <a href="#" class="rate-star"><img srcset="/maybelline/Frame33.png 2x" alt=""></a>
+          <ul class="buying">
+            <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
+            <button class="btn2">MUA NGAY</button> 
+          </ul>
+        </div>
+      </div>
+    </li>
+  <!-- sp 3-->
+    <li class="prd">
+      <div class="product-item">
+        <div class="product-top">
+          <a href="" class="eyeproduct-thumb">
+            <img src="/maybelline/sp-moi-4.png" alt="">
+          </a>
+        </div>
+        <div class="product-inf">
+          <a href="" class="product-name">Son Bút Chì Super Stay Ink Crayonn</a>
+          <a href="" class="product-price">259.000đ</a>
+          <a href="" class="rate-star"><img srcset="/maybelline/Frame33.png 2x" alt=""></a>
+          <ul class="buying">
+            <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
+            <button class="btn2">MUA NGAY</button> 
+          </ul>
+        </div>
+      </div>
+    </li>
+    <!-- sp 4-->
+    <li class="prd">
+      <div class="product-item">
+        <div class="product-top">
+          <a href="" class="eyeproduct-thumb">
+            <img src="/maybelline/sp-moi-5.png" alt="">
+          </a>
+        </div>
+        <div class="product-inf">
+          <a href="" class="product-name">Son Kem Lì Sensational Cushion Mattes</a>
+          <a href="" class="product-price">299.000đ</a>
+          <a href="" class="rate-star"><img srcset="/maybelline/Frame33.png 2x" alt=""></a>
+          <ul class="buying">
+            <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
+            <button class="btn2">MUA NGAY</button> 
+          </ul>
+        </div>
+      </div>
+    </li>
+    <!-- sp 5-->
+    <li class="prd">
+      <div class="product-item">
+        <div class="product-top">
+          <a href="" class="eyeproduct-thumb">
+            <img src="/maybelline/sp-moi-6.png" alt="">
+          </a>
+        </div>
+        <div class="product-inf">
+          <a href="" class="product-name">Son Bóng Punchy Superstay Vinyl Ink</a>
+          <a href="" class="product-price">319.000đ</a>
+          <a href="" class="rate-star"><img srcset="/maybelline/Frame33.png 2x" alt=""></a>
+          <ul class="buying">
+            <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
+            <button class="btn2">MUA NGAY</button> 
+          </ul>
+        </div>
+      </div>
+    </li>
+    <!-- sp 6-->
+    <li class="prd">
+      <div class="product-item">
+        <div class="product-top">
+          <a href="" class="eyeproduct-thumb">
+            <img src="/maybelline/sp-moi-7.png" alt="">
+          </a>
+        </div>
+        <div class="product-inf">
+          <a href="" class="product-name">Son Kem Lì Super Stay Matte Ink</a>
+          <a href="" class="product-price">399.000đ</a>
+          <a href="" class="rate-star"><img srcset="/maybelline/Frame34.png 2x" alt=""></a>
+          <ul class="buying">
+            <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
+            <button class="btn2">MUA NGAY</button> 
+          </ul>
+        </div>
+      </div>
+    </li>
+    <!-- sp 7-->
+    <li class="prd">
+      <div class="product-item">
+        <div class="product-top">
+          <a href="" class="eyeproduct-thumb">
+            <img src="/maybelline/sp-moi-8.png" alt="">
+          </a>
+        </div>
+        <div class="product-inf">
+          <a href="" class="product-name">Maybelline, Color Sensational Mauve</a>
+          <a href="" class="product-price">399.000đ</a>
+          <a href="" class="rate-star"><img srcset="/maybelline/Frame33.png 2x" alt=""></a>
+          <ul class="sold-out">
+            <button class="bt-sold">HẾT HÀNG</button> 
+          </ul>
+        </div>
+      </div>
+    </li>
+  <!-- sp 8-->
+  </div>
+
+  <div class="slidebypass">
+    <ul>
+      <button class="slide-first">1</button>
+      <button class="slide-next"><img srcset="/images/Vector.png 2x" alt="icons"></button> 
+    </ul>
+  </div>
+</div>
+
+  <footer>
+    <div class="wrapper">
+        <div class="links-container">
+            <div class="logo">
+                <img srcset="images/MAYBELLINE.png 2x" alt="" width="200rem" height="50rem">
+                <img srcset="images/Rectangle.png 2x" alt="" width="200rem" height="60rem">
+            </div>
+            <div class="links">
+                <h3>Những câu hỏi thường gặp</h3>
+                <ul class="cau-hoi">
+                    <li>
+                        <a href="#">Quy định chung</a>
+                    </li>
+                    <li>
+                        <a href="#">Chính sách bảo mật</a> 
+                    </li>
+                    <li>
+                        <a href="#">Chính sách đổi trả</a>  
+                    </li>
+                    <li>
+                        <a href="#">Thông tin vận chuyển</a>  
+                    </li>
+                    <li>
+                        <a href="#">Hình thức thanh toán</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Thông tin liên hệ</h3>
+                <ul class="lien-he">
+                    <li>
+                      Big C Thăng Long - 222 Trần Duy<br>Hưng, Trung Hòa, Cầu Giấy, Hà Nội
+                    </li>
+                    <li>
+                        Big C Phú Thạnh 202B Hoàng Văn<br>Thụ, P.9, Q. Phú Nhuận, TP.HCM
+                    </li>
+                    <li>
+                        Email: contactus@maybelline.vn
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>
