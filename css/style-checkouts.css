@@ -1,0 +1,641 @@
+html{
+    font-size: 62.5%;
+}
+:root{
+    --black-color: #000000;
+    --dark-grey-color: #767676;
+    --white-color: #fff;
+    --light-color: #D9D9D9;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* Header*/
+
+nav{
+    display: flex;
+    height: 12rem;
+    justify-content: space-evenly;
+}
+
+.front-header{
+    background-color: var(--black-color);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow {
+    padding: 0;
+    margin: 0;
+}
+nav .follow li{
+    color: var(--white-color);
+}
+
+nav .follow li p{
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+nav .follow li a{
+    text-decoration: none;
+}
+
+nav .logo a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+nav .logo h1{
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 0.08em;
+    margin: 0;
+    margin-top: 1rem;
+   
+}
+
+nav .logo p{
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 100.52%;
+    margin: 0;
+   
+}
+
+.timkiem{
+    margin: 0;
+}
+nav .timkiem{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+nav .timkiem input{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 220px;
+    width: 100%;
+    border: 0;
+}
+
+nav .timkiem p{
+    color: var(--white-color);
+    font-size: 1.2rem;
+    margin: 0;
+}
+nav .timkiem ::placeholder{
+    font-size: 1.2rem;
+}
+
+nav .timkiem form{
+    position: relative;
+}
+
+nav .timkiem form .submit-btn{
+    position: absolute;
+    top: 50%;
+    right: 2.1px;
+    transform: translateY(-50%);
+    border-radius:  0 20px 20px 0;
+    background-color: var(--white-color);
+    border: 0;
+}
+
+
+/* Menu */
+
+.menu{
+    background-color: var(--dark-grey-color);
+    height: 4rem;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.menu ul li{
+    display: flex;
+    width: 12rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+
+}
+
+/* Main */
+.main-content{
+    max-width: 1920px;
+}
+.wrap{
+    margin-top: 20px;
+}
+
+.main-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.section-header h2{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.25%;
+    letter-spacing: 0.002em;
+    margin-bottom: 3rem;
+}
+
+.section-content .fieldset .field-input-wrapper ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fieldset .field-input-wrapper ul li{
+    margin: 2rem 0;
+}
+
+.fieldset .field-input-wrapper ul li input{
+    width: 40rem;
+    height: 5rem;
+    border-radius: 15px;
+}
+
+.fieldset .field-input-wrapper ul li input::placeholder{
+    padding-left:10px ;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.25%;
+    letter-spacing: 0.002em;
+}
+
+.fieldset .field-input-wrapper input{
+    width: 40rem;
+    height: 5rem;
+    border-radius: 15px;
+    padding-left:10px ;
+}
+select#customer_shipping_province.field-input {
+    width: 40rem;
+    height: 5rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+select#customer_shipping_province.field-input option{
+    padding-left:10px ;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.25%;
+    letter-spacing: 0.002em;
+    padding-left: 10px;
+}
+
+.section-footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.section-content2{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.25%;
+    letter-spacing: 0.002em;
+    border: 1px solid black;
+    width: 40rem;
+    height: 5rem;
+    border-radius: 15px;
+}
+.section-content2 input{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.section-footer button {
+    border-radius: 15px;
+    width: 12rem;
+    height: 4.5rem;
+    background-color: #767676;
+    border: 0;
+}
+
+.section-footer span{
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.25%;
+    letter-spacing: 0.002em;
+}
+
+/* Footer */
+
+.links-container{
+    background-color: var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.logo img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.links ul{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0;
+}
+.links ul li{
+    color: var(--white-color);    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 180%;
+    letter-spacing: 0.0002em;
+}
+.links .cau-hoi li{
+    margin-bottom: 0.5rem;
+}
+.links .lien-he li{
+    margin-bottom: 1rem;
+}
+
+.links h3{
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.0002em;
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+@media screen and (min-width: 700px)and (max-width: 1300px) {
+    /* Header*/
+    nav {
+       height: 9rem;
+       align-items: center;
+       display: flex;
+       justify-content:space-evenly;
+   }
+
+   nav ul{
+       gap: 2px;
+   }
+   
+   nav .follow li p{
+       font-size: 1.2rem;
+   }
+
+   nav .follow li img{
+       width: 18px;
+       height: 18px;
+
+   }
+   
+   nav .logo h1{
+       font-size: 2.6rem;
+   }
+
+   nav .logo p{
+       color: var(--white-color);
+       font-style: normal;
+       font-weight: 400;
+       font-size: 1.4rem;
+       line-height: 100.52%;
+       margin: 0;
+   }
+   nav .timkiem{
+       display: flex;
+       align-items: center;
+       gap: 1rem;
+       padding: 0;
+   }
+   
+   nav .timkiem input{
+       width: 12rem;
+       height: 2.8rem;
+   }
+   
+   nav .timkiem p{
+       font-size: 1.2rem;
+   }
+   nav .timkiem ::placeholder{
+       font-size: 1rem;
+   }
+
+   .giohang img{
+       width: 2.6rem;
+       height: 2.4rem;
+       margin-left: 0.8rem;
+   }
+
+   /* Menu*/
+   .menu{
+       height: 3rem;
+   }
+   
+   .menu ul{
+       gap: 0px;
+       padding: 0;
+   }
+   
+   .menu ul li{
+       width: 12rem;     
+   }
+
+   .menu ul li a{
+       position: absolute;
+       font-style: normal;
+       font-size: 1.2rem;
+       line-height: 1.4rem;
+   }
+
+   /* Main */
+
+   .main-content{
+        width:100%;
+        margin: 2rem 5rem;
+   }
+    .section-header h2{
+        font-size: 1.5rem;
+    }
+
+    .fieldset .field-input-wrapper ul li{
+        margin: 2rem 0;
+    }
+
+    .fieldset .field-input-wrapper ul li input{
+        width: 30rem;
+        height: 4.5rem;
+    }
+
+    .fieldset .field-input-wrapper ul li input::placeholder{
+        font-weight: 300;
+        font-size: 13px;
+        padding-left: 0px ;
+    }
+
+    .fieldset .field-input-wrapper input{
+        width: 30rem;
+        height: 4.5rem;
+    }
+    select#customer_shipping_province.field-input {
+        width: 30rem;
+        height: 4.5rem;  
+        padding-left:5px ;
+    }
+
+    select#customer_shipping_province.field-input option{
+        font-size: 13px;
+    }
+
+    .section-footer{
+        margin: 2rem 0;
+    }
+
+    .section-content2{
+        font-size: 14px;
+        width: 30rem;
+        height: 4.5rem;
+    }
+
+    .section-footer button {
+        width: 10rem;
+        height: 4.2rem;
+    }
+
+    .section-footer span{
+        font-size: 13px;
+    }
+
+    /* Footer */
+
+    .links ul li{
+        font-size: 1.2rem;
+        line-height: 160%;
+    }
+
+    .links .cau-hoi li{
+        margin-bottom: 0.5rem;
+    }
+
+    .links .lien-he li{
+        margin-bottom: 1rem;
+    }
+
+    .links h3{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .links-container .logo img{
+        width: 15rem;
+        height: 5rem;
+    }
+
+}
+
+
+
+
+@media (max-width: 700px) {
+    /* Header*/
+    nav {
+        height: 5rem;
+    }
+
+    nav ul{
+        display: none;
+    }
+    
+    nav .logo h1{
+        font-size: 2.2rem;    
+    }
+
+    nav .logo p{
+        font-size: 1rem;
+    }
+
+    nav .timkiem input{
+        width: 12rem;
+        height: 2.3rem;
+    }
+    
+    nav .timkiem p{
+        font-size: 1.2rem;
+    }
+    nav .timkiem ::placeholder{
+        font-size: 1rem;
+    }
+
+    .giohang img{
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-left: 1rem;
+    }
+    .timkiem form button img{
+        width: 13px;
+        height: 13px;
+    }    
+
+    /* Menu*/
+    .menu{
+        height: 3rem;
+    }
+    
+     .menu ul{
+       gap: 10px;
+       padding: 0;
+    }
+   
+   .menu ul li{
+       width: 8rem;     
+    }
+
+   .menu ul li a{
+       position: absolute;
+       font-style: normal;
+       font-size: 1rem;
+       line-height: 1.2rem;
+    }
+
+    /* Main */
+    .main-content{
+        width:100%;
+        margin: 1rem 2rem;
+   }
+    .section-header h2{
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .fieldset .field-input-wrapper ul li{
+        margin: 1.4rem 0;
+    }
+
+    .fieldset .field-input-wrapper ul li input{
+        width: 26rem;
+        height: 4rem;
+    }
+
+    .fieldset .field-input-wrapper ul li input::placeholder{
+        font-size: 12px;
+        padding-left: 0px;
+    }
+
+    .fieldset .field-input-wrapper input{
+        width: 26rem;
+        height: 4rem;
+    }
+    select#customer_shipping_province.field-input {
+        width: 26rem;
+        height: 4rem;  
+        padding-left: 5px;
+    }
+
+    select#customer_shipping_province.field-input option{
+        font-size: 12px;
+    }
+
+    .section-header{
+        margin-bottom: 30px;
+    }
+    .section-footer{
+        margin: 1.4rem 0;
+    }
+
+    .section-content2{
+        font-size: 12px;
+        width: 26rem;
+        height: 4rem;
+    }
+    .section-content2 form {
+       text-align:start;
+
+    }
+    .section-footer button {
+        width: 8rem;
+        height: 3.8rem;
+    }
+
+    .section-footer span{
+        font-size: 12px;
+    }
+
+    /* Footer */
+
+    .links ul li{
+        font-size: 1rem;
+        line-height: 140%;
+    }
+
+    .links .cau-hoi li{
+        margin-bottom: 0.5rem;
+    }
+
+    .links .lien-he li{
+        margin-bottom: 1rem;
+    }
+
+    .links h3{
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
+    .links-container .logo img{
+        width: 10rem;
+        height: 3.8rem;
+        margin-bottom: 25px;
+    }
+}

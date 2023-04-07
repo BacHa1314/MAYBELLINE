@@ -1,0 +1,618 @@
+html{
+    font-size: 62.5%;
+}
+:root{
+    --black-color: #000000;
+    --dark-grey-color: #767676;
+    --white-color: #fff;
+    --light-color: #D9D9D9;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* Header*/
+
+nav{
+    display: flex;
+    height: 12rem;
+    justify-content: space-evenly;
+}
+
+.front-header{
+    background-color: var(--black-color);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow {
+    padding: 0;
+    margin: 0;
+}
+nav .follow li{
+    color: var(--white-color);
+}
+
+nav .follow li p{
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+nav .follow li a{
+    text-decoration: none;
+}
+
+nav .logo a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+nav .logo h1{
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 0.08em;
+    margin: 0;
+    margin-top: 1rem;
+   
+}
+
+nav .logo p{
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 100.52%;
+    margin: 0;
+   
+}
+
+.timkiem{
+    margin: 0;
+}
+nav .timkiem{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+nav .timkiem input{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 220px;
+    width: 100%;
+    border: 0;
+}
+
+nav .timkiem p{
+    color: var(--white-color);
+    font-size: 1.2rem;
+    margin: 0;
+}
+nav .timkiem ::placeholder{
+    font-size: 1.2rem;
+}
+
+nav .timkiem form{
+    position: relative;
+}
+
+nav .timkiem form .submit-btn{
+    position: absolute;
+    top: 50%;
+    right: 2.1px;
+    transform: translateY(-50%);
+    border-radius:  0 20px 20px 0;
+    background-color: var(--white-color);
+    border: 0;
+}
+
+
+/* Menu */
+
+.menu{
+    background-color: var(--dark-grey-color);
+    height: 4rem;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.menu ul li{
+    display: flex;
+    width: 12rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+
+}
+
+.hero-section img{
+    width: 100%;
+}
+
+/* Main */
+
+.wrapper2{
+    margin: 6rem 10rem;
+}
+
+.wrapper2 ul{
+    padding: 0;
+}
+
+.wrapper2 ul a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.wrapper2 h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 96.5%;
+    letter-spacing: -0.013em;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 1.5rem;
+    border-top: 1px solid #000000;
+}
+.wrapper2 a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 96.5%;
+    letter-spacing: -0.013em;
+}
+
+.wrapper2 p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 111%;
+    letter-spacing: -0.013em;
+}
+
+.picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture a{
+    margin: 0px auto;
+}
+
+.picture img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.best-sellers{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.new-arrivals{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.new-arrivals li{
+    position: relative;
+}
+
+.new-arrivals li a{
+    display: inline-block;
+    height: 100%;
+    color:#000000;
+}
+
+.new-arrivals li img{
+    max-width: 100%;
+    text-decoration: none;
+}
+
+.product-details{
+    position: absolute;
+    right: 15px;
+    bottom: 40px;
+}
+
+.product-details h4{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.27%;
+    letter-spacing: 0.005em;
+    margin: 0;
+    padding-left: 20px;
+    white-space: normal;
+}
+
+.product-details p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.25%;
+    letter-spacing: 0.002em;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.makeup-looks{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.make-up-studio{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Footer */
+
+.links-container{
+    background-color: var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.logo img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.links ul{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0;
+}
+.links ul li{
+    color: var(--white-color);    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 180%;
+    letter-spacing: 0.0002em;
+}
+.links .cau-hoi li{
+    margin-bottom: 0.5rem;
+}
+.links .lien-he li{
+    margin-bottom: 1rem;
+}
+
+.links h3{
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.0002em;
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+@media screen and (min-width: 700px)and (max-width: 1300px) {
+    /* Header*/
+    nav {
+       height: 9rem;
+       align-items: center;
+       display: flex;
+       justify-content:space-evenly;
+   }
+
+   nav ul{
+       gap: 2px;
+   }
+   
+   nav .follow li p{
+       font-size: 1.2rem;
+   }
+
+   nav .follow li img{
+       width: 18px;
+       height: 18px;
+
+   }
+   
+   nav .logo h1{
+       font-size: 2.6rem;
+   }
+
+   nav .logo p{
+       color: var(--white-color);
+       font-style: normal;
+       font-weight: 400;
+       font-size: 1.4rem;
+       line-height: 100.52%;
+       margin: 0;
+   }
+   nav .timkiem{
+       display: flex;
+       align-items: center;
+       gap: 1rem;
+       padding: 0;
+   }
+   
+   nav .timkiem input{
+       width: 12rem;
+       height: 2.8rem;
+   }
+   
+   nav .timkiem p{
+       font-size: 1.2rem;
+   }
+   nav .timkiem ::placeholder{
+       font-size: 1rem;
+   }
+
+   .giohang img{
+       width: 2.6rem;
+       height: 2.4rem;
+       margin-left: 0.8rem;
+   }
+
+   /* Menu*/
+   .menu{
+       height: 3rem;
+   }
+   
+   .menu ul{
+       gap: 0px;
+       padding: 0;
+   }
+   
+   .menu ul li{
+       width: 12rem;     
+   }
+
+   .menu ul li a{
+       position: absolute;
+       font-style: normal;
+       font-size: 1.2rem;
+       line-height: 1.4rem;
+   }
+   .wrapper2{
+        margin: 3rem 6rem;
+    }
+
+    .wrapper2 h2{
+        font-size: 2.8rem;
+    }
+    .wrapper2 a, .wrapper2 p{
+        font-size: 1.2rem;
+    }
+
+    .picture img{
+        padding-bottom: 8px;
+    }
+
+    .product-details{
+        right: 2px;
+        bottom: 25px;
+    }
+    
+    .product-details h4{
+        font-size: 1.1rem;
+        padding-left: 20px;
+    }
+    
+    .product-details p{
+        font-size: 0.8rem;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .best-sellers, .new-arrivals, .makeup-looks, .make-up-studio{
+        gap: 1rem;
+    }
+
+    /* Footer */
+
+    .links ul li{
+        font-size: 1.2rem;
+        line-height: 160%;
+    }
+
+    .links .cau-hoi li{
+        margin-bottom: 0.5rem;
+    }
+
+    .links .lien-he li{
+        margin-bottom: 1rem;
+    }
+
+    .links h3{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .links-container .logo img{
+        width: 15rem;
+        height: 5rem;
+    }
+
+}
+
+
+
+
+@media (max-width: 700px) {
+    /* Header*/
+    nav {
+        height: 5rem;
+    }
+
+    nav ul{
+        display: none;
+    }
+    
+    nav .logo h1{
+        font-size: 2.2rem;    
+    }
+
+    nav .logo p{
+        font-size: 1rem;
+    }
+
+    nav .timkiem input{
+        width: 12rem;
+        height: 2.3rem;
+    }
+    
+    nav .timkiem p{
+        font-size: 1.2rem;
+    }
+    nav .timkiem ::placeholder{
+        font-size: 1rem;
+    }
+
+    .giohang img{
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-left: 1rem;
+    }
+    .timkiem form button img{
+        width: 13px;
+        height: 13px;
+    }    
+
+    /* Menu*/
+    .menu{
+        height: 3rem;
+    }
+    
+     .menu ul{
+       gap: 10px;
+       padding: 0;
+    }
+   
+   .menu ul li{
+       width: 8rem;     
+    }
+
+   .menu ul li a{
+       position: absolute;
+       font-style: normal;
+       font-size: 1rem;
+       line-height: 1.2rem;
+    }
+
+    /* Main */
+   .wrapper2{
+        margin: 2rem 4rem;
+    }
+
+    .wrapper2 h2{
+        font-size: 1.8rem;
+    }
+    .wrapper2 a, .wrapper2 p{
+        font-size: 0.8rem;
+    }
+
+    .picture img{
+        padding-bottom: 4px;
+    }
+
+    .product-details{
+        right: 8px;
+        bottom: 21px;
+    }
+    
+    .product-details h4{
+        font-size: 0.7rem;
+        padding-left: 15px;
+    }
+    
+    .product-details p{
+        font-size: 0.5rem;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
+    /* Footer */
+
+    .links ul li{
+        font-size: 1rem;
+        line-height: 140%;
+    }
+
+    .links .cau-hoi li{
+        margin-bottom: 0.5rem;
+    }
+
+    .links .lien-he li{
+        margin-bottom: 1rem;
+    }
+
+    .links h3{
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
+    .links-container .logo img{
+        width: 10rem;
+        height: 3.8rem;
+        margin-bottom: 25px;
+    }
+}
