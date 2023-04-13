@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/style-checkouts.css">
+        <link rel="stylesheet" href="css/style-checkouts.css">
     </head>
     <body>
         <header>
@@ -95,13 +95,13 @@
                                 <div class="field-input-wrapper">
                                     <ul>
                                         <li>
-                                            <input type="text" placeholder="Họ và tên" autocapitalize="off" spellcheck="false" class="field-input" name="billing_address_full_name[full_name]" id="billing_address_full_name" autocomplete="false">
+                                            <input type="text" placeholder="Họ và tên" autocapitalize="off" spellcheck="false" class="field-input" name="name[full_name]" id="namebox" required>
                                         </li>
                                         <li>
-                                            <input autocomplete="false" type="email" placeholder="Email" class="field-input" id="checkout_user_email" name="checkout_user[email]" value>
+                                            <input autocomplete="false" type="email" placeholder="Email" class="field-input" id="email" name="checkout_user[email]" value required>
                                         </li>
                                         <li>
-                                            <input autocomplete="false" type="tel" placeholder="Số điện thoại" class="field-input" id="billing_address_phone" name="billing_address[phone]" value>
+                                            <input autocomplete="false" type="tel" placeholder="Số điện thoại" class="field-input" id="phone_number" name="billing_address[phone]" value required>
                                         </li>
                                     </ul>
                                 </div>
@@ -119,7 +119,7 @@
                                     </div>
                                     <div class="field">
                                         <div class="field-input-wrapper">
-                                            <input autocomplete="false" type="text" placeholder="Địa chỉ" class="field-input" id="billing_address_address1" name="billing_address[address1]" value>
+                                            <input autocomplete="false" type="text" placeholder="Địa chỉ" class="field-input" id="address1" name="billing_address[address1]" value required>
                                         </div>
                                         <input name="select_country" type="hidden" value>
                                         <input name="select_province" type="hidden" value>
@@ -127,7 +127,7 @@
                                         <input name="select_ward" type="hidden" value>
                                         <div class="field field-show-floating-lable" >
                                             <div class="field-input-wrapper field-input-wrapper-select">
-                                                <select class="field-input" id="customer_shipping_province" name="customer_shipping_province">
+                                                <select class="field-input" id="province" name="province">
                                                     <option data-code="null" value="null" selected="">Chọn tỉnh / thành </option>
                                                     <option data-code="HC" value="50">Hồ Chí Minh</option>
                                                     <option data-code="HI" value="1">Hà Nội</option>
@@ -226,7 +226,7 @@
             <div class="section-footer">
                 <form id="form_next_step" accept-charset="UTF-8" method="post">
                     <input name="utf8" type="hidden" value="✓">
-                    <button type="submit" class="step-footer-continue-btn btn">
+                    <button type="submit" class="step-footer-continue-btn btn" id="insertBtn">
                         <span class="btn-content">Đặt hàng</span>
                         <i class="btn-spinner icon icon-button-spinner"></i>
                     </button>
@@ -280,4 +280,57 @@
                 </div>
             </div>
         </footer>
+
+        <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB7nr_6HblT4aMfao7fHGlBRz92dbgDbO4",
+            authDomain: "maybelline-final-9i9i.firebaseapp.com",
+            projectId: "maybelline-final-9i9i",
+            storageBucket: "maybelline-final-9i9i.appspot.com",
+            messagingSenderId: "742836346997",
+            appId: "1:742836346997:web:c0b5846e6337017a44183c"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import {getDatabase, set, ref, child, update, remove}
+        from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+        const db = getDatabase();
+
+        var enterName = document.getElementById("namebox");
+        var enterEmail = document.getElementById("email");
+        var enterPhone = document.getElementById("phone_number");
+        var enterAddress = document.getElementById("address");
+        var enterProvince = document.getElementById("province");           
+            
+        var insertBtn = document.getElementById("insertBtn")
+          
+        function InsertData(){
+            set(ref(db, "Don hang/" + enterName.value),{
+            Name: enterName.value,
+            Email: enterEmail.value,
+            Phone: enterPhone.value,
+            Address: enterAddress.value,
+            Province: enterProvince.value
+            })
+            .then(()=>{
+                alert("Bạn đã đặt hàng thành công!");
+            })
+            .catch((error)=> {
+                alert("unsuccessful, error"+error);
+            });
+        }
+
+        insertBtn.addEventListener('click', InsertData);
+        
+        </script>
+
     </body>

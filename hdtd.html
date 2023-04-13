@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/hdtd.css">
+    <link rel="stylesheet" href="css/hdtd.css">
    
 </head>
 <body>
@@ -245,5 +245,25 @@
             </div>
      </footer>
    <script src="hdtd.js"></script>
+   <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB7nr_6HblT4aMfao7fHGlBRz92dbgDbO4",
+      authDomain: "maybelline-final-9i9i.firebaseapp.com",
+      databaseURL: "https://maybelline-final-9i9i-default-rtdb.firebaseio.com",
+      projectId: "maybelline-final-9i9i",
+      storageBucket: "maybelline-final-9i9i.appspot.com",
+      messagingSenderId: "742836346997",
+      appId: "1:742836346997:web:c0b5846e6337017a44183c"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
 </body>
 </html>

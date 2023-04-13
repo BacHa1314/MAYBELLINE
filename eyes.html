@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/product.css">
+<link rel="stylesheet" href="css/product.css">
 
 
 <style>
@@ -224,7 +224,7 @@
           <a href="" class="rate-star"><img srcset="/mbl_img/Frame34.png 2x" alt=""></a>
           <ul class="buying">
             <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
-            <button class="btn2">MUA NGAY</button> 
+            <a  href="/checkout.html"><button class="btn2">MUA NGAY</button></a> 
           </ul>
         </div>
       </div>
@@ -261,7 +261,7 @@
           <a href="" class="rate-star"><img srcset="/mbl_img/Frame33.png 2x" alt=""></a>
           <ul class="buying">
             <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
-            <button class="btn2">MUA NGAY</button> 
+            <a  href="/checkout.html"><button class="btn2">MUA NGAY</button></a> 
           </ul>
         </div>
       </div>
@@ -280,7 +280,7 @@
           <a href="" class="rate-star"><img srcset="/mbl_img/Frame33.png 2x" alt=""></a>
           <ul class="buying">
             <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
-            <button class="btn2">MUA NGAY</button> 
+            <a  href="/checkout.html"><button class="btn2">MUA NGAY</button></a> 
           </ul>
         </div>
       </div>
@@ -299,7 +299,7 @@
           <a href="" class="rate-star"><img srcset="/mbl_img/Frame33.png 2x" alt=""></a>
           <ul class="buying">
             <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
-            <button class="btn2">MUA NGAY</button> 
+            <a  href="/checkout.html"><button class="btn2">MUA NGAY</button></a> 
           </ul>
         </div>
       </div>
@@ -318,7 +318,7 @@
           <a href="" class="rate-star"><img srcset="/mbl_img/Frame34.png 2x" alt=""></a>
           <ul class="buying">
             <button class="btn1">THÊM VÀO GIỎ HÀNG</button>
-            <button class="btn2">MUA NGAY</button> 
+            <a  href="/checkout.html"><button class="btn2">MUA NGAY</button></a> 
           </ul>
         </div>
       </div>
@@ -398,6 +398,26 @@
   </footer>
   <script>
 
+  </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB7nr_6HblT4aMfao7fHGlBRz92dbgDbO4",
+      authDomain: "maybelline-final-9i9i.firebaseapp.com",
+      databaseURL: "https://maybelline-final-9i9i-default-rtdb.firebaseio.com",
+      projectId: "maybelline-final-9i9i",
+      storageBucket: "maybelline-final-9i9i.appspot.com",
+      messagingSenderId: "742836346997",
+      appId: "1:742836346997:web:c0b5846e6337017a44183c"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
   </script>
 </body>
 </html>
